@@ -1,6 +1,6 @@
 import './App.css';
-import './particles/NavBar';
-import './pages/LandingPage';
+import NavBar from './particles/NavBar';
+import LandingPage from './pages/LandingPage';
 
 function App() {
   return (
