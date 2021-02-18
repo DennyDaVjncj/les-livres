@@ -1,6 +1,6 @@
 const xprss=require('express');
 const creature=require('mongoose');//for database
-const googleMaps=require('');//configure routs
+const googleMaps=require('');//
 const app=xprss();
 const CHANNEL=process.env.CHANNEL||7853;
 
@@ -10,7 +10,7 @@ if(process.env.NODE_ENV==='production'){
     app.use(xprss.static('client/build'))
 }
 
-app.use();//eventual routes folder
+app.use(googleMaps);//eventual routes folder
 creature.connect(process.env.MONGODB_URI||'mongodb://localhost/anthology');
 
 app.listen(CHANNEL,()=>{
