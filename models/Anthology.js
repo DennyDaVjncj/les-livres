@@ -1,5 +1,5 @@
 const creature=require('mongoose');
-const Schema=mongoose.Schema;
+const Schema=creature.Schema;
 
 const anthologySchema=new Schema({
     title:{type:String,required:true},
